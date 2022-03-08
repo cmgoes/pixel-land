@@ -4,7 +4,7 @@ import DrawerContent from "./drawer-content";
 
 const useStyles = makeStyles({
     drawerPaper: {
-        borderRight: 0,
+        borderRight: 'none!important', 
     },
 });
 
@@ -13,7 +13,7 @@ export default function Sidebar({ mobileOpen }) {
     return (
         <Drawer 
             variant="permanent" 
-            anchor="left" 
+            anchor="left"
             classes={{
                 paper: classes.drawerPaper,
             }}
